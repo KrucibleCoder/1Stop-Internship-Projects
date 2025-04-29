@@ -21,7 +21,7 @@ This repository contains the projects completed during my Cybersecurity Internsh
   - Identify live/non-live hosts
   - Scan open/closed ports
 
-📂 Code: [`network-port-scanner/`](./network-port-scanner/)  
+📂 Code: [`network-port-scanner/`](https://github.com/KrucibleCoder/1Stop-Internship-Projects/blob/main/1Stop%20Project2.zip)  
 📄 [Report](./network-port-scanner/report.pdf)
 
 ---
