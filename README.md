@@ -33,7 +33,7 @@ This repository contains the projects completed during my Cybersecurity Internsh
   - Password & Wordlist Generator
   - Phone Number Info Tool
   - Subdomain Checker
-  - DDoS Tool (for educational use only)
+  - DDoS Tool (not completely implemented for legal reasons)
 
 📂 Code: [`recon-automation/`](./recon-automation/)  
 📄 [Report](./recon-automation/report.pdf)
