@@ -43,7 +43,7 @@ This repository contains the projects completed during my Cybersecurity Internsh
 ### 💡 Assignment: Domain Info Tool
 - Simple Python tool to fetch and display domain-related information such as IP address and geolocation.
 
-📂 Code: [`extra-tools/domain_info_tool.py`](./extra-tools/domain_info_tool.py)
+📂 Code: [`extra-tools/domain_info_tool.py`](https://github.com/KrucibleCoder/1Stop-Internship-Projects/blob/main/1Stop%20Assignment1.zip)
 
 ---
 
