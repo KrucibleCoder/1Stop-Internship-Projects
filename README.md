@@ -12,7 +12,6 @@ This repository contains the projects completed during my Cybersecurity Internsh
 - Users redirected post-phishing to simulate real-world attack scenarios.
 
 📂 Code: [`phishing-awareness-simulation/`](./phishing-awareness-simulation/)  
-📄 [Report](./phishing-awareness-simulation/report.pdf)
 
 ---
 
@@ -22,7 +21,6 @@ This repository contains the projects completed during my Cybersecurity Internsh
   - Scan open/closed ports
 
 📂 Code: [`network-port-scanner/`](https://github.com/KrucibleCoder/1Stop-Internship-Projects/blob/main/1Stop%20Project2.zip)  
-📄 [Report](./network-port-scanner/report.pdf)
 
 ---
 
@@ -35,8 +33,7 @@ This repository contains the projects completed during my Cybersecurity Internsh
   - Subdomain Checker
   - DDoS Tool (not completely implemented for legal reasons)
 
-📂 Code: [`recon-automation/`](./recon-automation/)  
-📄 [Report](./recon-automation/report.pdf)
+📂 Code: [`recon-automation/`](https://github.com/KrucibleCoder/1Stop-Internship-Projects/blob/main/1Stop%20Project3.zip)  
 
 ---
 
