@@ -14,6 +14,9 @@ from phonenumbers import carrier, geocoder
 import requests
 from tabulate import tabulate
 
+# Set the default output directory for generated PNG files.
+OUTPUT_DIR = "Generated PNG"
+
 # Function for IP Scanner
 def ip_scanner(ip):
     print(f"Scanning IP: {ip}")
@@ -36,15 +39,21 @@ def port_scanner(ip, ports):
 
 # Function for Barcode Generator
 def generate_barcode(data):
+    # Ensure output folder exists before saving the PNG.
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     barcode_obj = EAN13(data, writer=ImageWriter())
-    barcode_obj.save("barcode")
-    print("Barcode saved as barcode.png")
+    output_path = os.path.join(OUTPUT_DIR, "barcode.png")
+    barcode_obj.save(output_path)
+    print(f"Barcode saved as {output_path}")
 
 # Function for QR Code Generator
 def generate_qrcode(data):
+    # Ensure output folder exists before saving the PNG.
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     qr = pyqrcode.create(data)
-    qr.png("qrcode.png", scale=6)
-    print("QR Code saved as qrcode.png")
+    output_path = os.path.join(OUTPUT_DIR, "qrcode.png")
+    qr.png(output_path, scale=6)
+    print(f"QR Code saved as {output_path}")
 
 # Function for Password Generator
 def generate_password(length=12):
