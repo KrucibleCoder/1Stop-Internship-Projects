@@ -9,6 +9,9 @@ from barcode import EAN13
 from barcode.writer import ImageWriter
 from phonenumbers import carrier, geocoder
 
+# Output directory for generated PNG assets.
+OUTPUT_DIR = "Generated PNG"
+
 # IP Scanner
 def ip_scanner(ip_range):
     print("Scanning IP range:", ip_range)
@@ -26,16 +29,22 @@ def port_scanner(target_ip, ports):
         sock.close()
 
 # Barcode Generator
+# Save the barcode image into the generated PNG folder.
 def generate_barcode(data, filename):
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     barcode = EAN13(data, writer=ImageWriter())
-    barcode.save(filename)
-    print(f"Barcode saved as {filename}")
+    output_path = os.path.join(OUTPUT_DIR, filename)
+    barcode.save(output_path)
+    print(f"Barcode saved as {output_path}")
 
 # QR Code Generator
+# Save the QR code image into the generated PNG folder.
 def generate_qrcode(data, filename):
+    os.makedirs(OUTPUT_DIR, exist_ok=True)
     qr = pyqrcode.create(data)
-    qr.png(filename, scale=8)
-    print(f"QR Code saved as {filename}")
+    output_path = os.path.join(OUTPUT_DIR, filename)
+    qr.png(output_path, scale=8)
+    print(f"QR Code saved as {output_path}")
 
 # Password Generator
 def generate_password(length):
