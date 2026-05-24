@@ -88,7 +88,7 @@ def barcode_generator():
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{filename}.png")
     barcode.save(output_path)
-    print(f"\nBarcode saved as {output_path}!")
+    print(f"\nBarcode saved as {output_dir}{os.sep}{filename}.png")
     input("\nPress ENTER to return to menu...")
 
 # Generate a QR code image from arbitrary input data.
@@ -104,7 +104,7 @@ def qr_generator():
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, f"{filename}.png")
     qr.png(output_path, scale=8)
-    print(f"\nQR Code saved as {output_path}!")
+    print(f"\nQR Code saved as {output_dir}{os.sep}{filename}.png")
     input("\nPress ENTER to return to menu...")
 
 # Look up phone carrier and region metadata for a phone number.
