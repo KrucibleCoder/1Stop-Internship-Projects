@@ -27,7 +27,7 @@ This repository contains the projects completed during my Cybersecurity Internsh
 ### 🕵️ 3. Recon Automation for Web Pentesting (Python)
 - All-in-one Python recon tool with:
   - IP/Port Scanner
-  - Barcode & QR Generator
+  - Barcode & QR Generator (saves output to a `Generated PNG` folder)
   - Password & Wordlist Generator
   - Phone Number Info Tool
   - Subdomain Checker
